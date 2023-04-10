@@ -72,3 +72,10 @@ def load_uci_data(dataset):
     std = x.std(0)
     x = (x - mean) / std
     return x, y
+
+
+def load_similarity(data_path):
+    data_dict = np.load(data_path)
+    similarities, label = data_dict["score"], data_dict["label"]
+    return label, similarities 
+    
