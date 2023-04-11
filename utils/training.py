@@ -62,4 +62,5 @@ def get_savedir(args):
     """Hash of args used for training."""
     dir_hash = hash_dict(args.__dict__)
     save_dir = os.path.join(os.environ["SAVEPATH"], args.dataset, dir_hash)
+    save_dir = "./embedding/data"
     return save_dir

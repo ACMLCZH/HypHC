@@ -1,6 +1,8 @@
 """Configuration parameters."""
 
 config_args = {
+    "cluster": "hyperbolic",
+    
     # training
     "seed": 1234,
     "epochs": 50,

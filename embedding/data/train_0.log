@@ -1,0 +1,157 @@
+2023-04-11 02:53:51,809 INFO Using seed 0.
+2023-04-11 02:53:51,809 INFO Using double precision.
+2023-04-11 02:54:31,702 INFO Using seed 0.
+2023-04-11 02:54:31,702 INFO Using double precision.
+2023-04-11 02:54:58,028 INFO Using seed 0.
+2023-04-11 02:54:58,029 INFO Using double precision.
+2023-04-11 02:55:42,688 INFO Using seed 0.
+2023-04-11 02:55:42,688 INFO Using double precision.
+2023-04-11 02:56:09,071 INFO Using seed 0.
+2023-04-11 02:56:09,072 INFO Using double precision.
+2023-04-11 03:08:58,965 INFO Using seed 0.
+2023-04-11 03:08:58,965 INFO Using double precision.
+2023-04-11 03:09:50,592 INFO Using seed 0.
+2023-04-11 03:09:50,592 INFO Using double precision.
+2023-04-11 03:10:06,791 INFO Using seed 0.
+2023-04-11 03:10:06,792 INFO Using double precision.
+2023-04-11 03:13:05,155 INFO Using seed 0.
+2023-04-11 03:13:05,156 INFO Using double precision.
+2023-04-11 03:14:39,438 INFO Using seed 0.
+2023-04-11 03:14:39,439 INFO Using double precision.
+2023-04-11 03:16:12,249 INFO Using seed 0.
+2023-04-11 03:16:12,250 INFO Using double precision.
+2023-04-11 03:17:01,897 INFO Using seed 0.
+2023-04-11 03:17:01,897 INFO Using double precision.
+2023-04-11 04:25:49,392 INFO Building dataset...
+2023-04-11 04:25:49,393 INFO Generating triples.
+2023-04-11 04:25:51,456 INFO Total of 900000 triples
+2023-04-11 04:25:51,459 INFO Building dataset loader...
+2023-04-11 04:25:51,459 INFO Creating model...
+2023-04-11 04:25:55,596 INFO Start training
+2023-04-11 04:26:26,851 INFO 	 Epoch 0 | average train loss: 1.112822
+2023-04-11 20:45:02,608 INFO Using seed 0.
+2023-04-11 20:45:02,609 INFO Using double precision.
+2023-04-11 21:25:15,623 INFO Using seed 0.
+2023-04-11 21:25:15,625 INFO Using double precision.
+2023-04-11 21:39:18,703 INFO Using seed 0.
+2023-04-11 21:39:18,705 INFO Using double precision.
+2023-04-11 22:16:50,838 INFO Building dataset...
+2023-04-11 22:16:50,838 INFO Generating triples.
+2023-04-11 22:16:51,829 INFO Total of 900000 triples
+2023-04-11 22:16:51,834 INFO Building dataset loader...
+2023-04-11 22:16:51,834 INFO Creating model...
+2023-04-11 22:16:57,183 INFO Start training
+2023-04-11 22:17:35,527 INFO 	 Epoch 0 | average train loss: 1.085279
+2023-04-11 22:17:38,409 INFO Dasgupta's cost:	20475540515.1013
+2023-04-11 22:18:16,985 INFO 	 Epoch 1 | average train loss: 1.084266
+2023-04-11 22:18:19,500 INFO Dasgupta's cost:	20447430931.2088
+2023-04-11 22:18:58,498 INFO 	 Epoch 2 | average train loss: 1.079712
+2023-04-11 22:19:01,495 INFO Dasgupta's cost:	20271093401.7940
+2023-04-11 22:19:40,185 INFO 	 Epoch 3 | average train loss: 1.068542
+2023-04-11 22:19:42,743 INFO Dasgupta's cost:	19983505019.2496
+2023-04-11 22:20:21,887 INFO 	 Epoch 4 | average train loss: 1.055639
+2023-04-11 22:20:24,253 INFO Dasgupta's cost:	19794915231.0183
+2023-04-11 22:21:02,919 INFO 	 Epoch 5 | average train loss: 1.045346
+2023-04-11 22:21:05,822 INFO Dasgupta's cost:	19632431079.9393
+2023-04-11 22:21:44,687 INFO 	 Epoch 6 | average train loss: 1.037278
+2023-04-11 22:21:47,104 INFO Dasgupta's cost:	19611283745.9319
+2023-04-11 22:22:25,677 INFO 	 Epoch 7 | average train loss: 1.031029
+2023-04-11 22:22:28,141 INFO Dasgupta's cost:	19384839858.8756
+2023-04-11 22:23:06,482 INFO 	 Epoch 8 | average train loss: 1.026344
+2023-04-11 22:23:08,912 INFO Dasgupta's cost:	19330921893.0548
+2023-04-11 22:23:47,357 INFO 	 Epoch 9 | average train loss: 1.023060
+2023-04-11 22:23:49,787 INFO Dasgupta's cost:	19312845285.6835
+2023-04-11 22:23:49,787 INFO Annealing temperature to: 0.025
+2023-04-11 22:23:49,787 INFO Annealing learning rate to: 5e-05
+2023-04-11 22:24:27,815 INFO 	 Epoch 10 | average train loss: 1.020716
+2023-04-11 22:24:31,040 INFO Dasgupta's cost:	19286739880.5104
+2023-04-11 22:25:09,507 INFO 	 Epoch 11 | average train loss: 1.019925
+2023-04-11 22:25:12,238 INFO Dasgupta's cost:	19277755675.0283
+2023-04-11 22:25:50,742 INFO 	 Epoch 12 | average train loss: 1.019305
+2023-04-11 22:25:53,232 INFO Dasgupta's cost:	19261088263.8650
+2023-04-11 22:26:31,384 INFO 	 Epoch 13 | average train loss: 1.018778
+2023-04-11 22:26:33,791 INFO Dasgupta's cost:	19267221640.3490
+2023-04-11 22:27:11,925 INFO 	 Epoch 14 | average train loss: 1.018323
+2023-04-11 22:27:14,491 INFO Dasgupta's cost:	19246519476.8617
+2023-04-11 22:27:52,360 INFO 	 Epoch 15 | average train loss: 1.017923
+2023-04-11 22:27:54,947 INFO Dasgupta's cost:	19241995819.4997
+2023-04-11 22:28:33,686 INFO 	 Epoch 16 | average train loss: 1.017581
+2023-04-11 22:28:36,048 INFO Dasgupta's cost:	19247652571.8863
+2023-04-11 22:29:15,276 INFO 	 Epoch 17 | average train loss: 1.017284
+2023-04-11 22:29:17,657 INFO Dasgupta's cost:	19257596755.4239
+2023-04-11 22:29:56,748 INFO 	 Epoch 18 | average train loss: 1.017035
+2023-04-11 22:29:59,108 INFO Dasgupta's cost:	19229100489.7990
+2023-04-11 22:30:38,063 INFO 	 Epoch 19 | average train loss: 1.016807
+2023-04-11 22:30:40,623 INFO Dasgupta's cost:	19244477511.3208
+2023-04-11 22:30:40,623 INFO Annealing temperature to: 0.0125
+2023-04-11 22:30:40,623 INFO Annealing learning rate to: 2.5e-05
+2023-04-11 22:31:19,278 INFO 	 Epoch 20 | average train loss: 1.016377
+2023-04-11 22:31:22,070 INFO Dasgupta's cost:	19248550731.3544
+2023-04-11 22:32:00,603 INFO 	 Epoch 21 | average train loss: 1.016251
+2023-04-11 22:32:03,012 INFO Dasgupta's cost:	19223827849.0930
+2023-04-11 22:32:42,005 INFO 	 Epoch 22 | average train loss: 1.016170
+2023-04-11 22:32:44,897 INFO Dasgupta's cost:	19246108219.2325
+2023-04-11 22:33:24,320 INFO 	 Epoch 23 | average train loss: 1.016106
+2023-04-11 22:33:27,127 INFO Dasgupta's cost:	19270984502.8515
+2023-04-11 22:34:05,696 INFO 	 Epoch 24 | average train loss: 1.016048
+2023-04-11 22:34:08,251 INFO Dasgupta's cost:	19246096296.0101
+2023-04-11 22:34:47,231 INFO 	 Epoch 25 | average train loss: 1.016002
+2023-04-11 22:34:49,927 INFO Dasgupta's cost:	19243780380.7119
+2023-04-11 22:35:28,631 INFO 	 Epoch 26 | average train loss: 1.015960
+2023-04-11 22:35:31,604 INFO Dasgupta's cost:	19223317300.9124
+2023-04-11 22:36:11,188 INFO 	 Epoch 27 | average train loss: 1.015916
+2023-04-11 22:36:13,718 INFO Dasgupta's cost:	19239023118.1546
+2023-04-11 22:36:52,506 INFO 	 Epoch 28 | average train loss: 1.015877
+2023-04-11 22:36:55,180 INFO Dasgupta's cost:	19237212172.3588
+2023-04-11 22:37:34,300 INFO 	 Epoch 29 | average train loss: 1.015833
+2023-04-11 22:37:36,880 INFO Dasgupta's cost:	19247826581.5059
+2023-04-11 22:37:36,880 INFO Annealing temperature to: 0.00625
+2023-04-11 22:37:36,880 INFO Annealing learning rate to: 1.25e-05
+2023-04-11 22:38:16,612 INFO 	 Epoch 30 | average train loss: 1.015639
+2023-04-11 22:38:19,126 INFO Dasgupta's cost:	19242359621.1565
+2023-04-11 22:38:57,800 INFO 	 Epoch 31 | average train loss: 1.015591
+2023-04-11 22:39:00,181 INFO Dasgupta's cost:	19241994233.4018
+2023-04-11 22:39:38,116 INFO 	 Epoch 32 | average train loss: 1.015568
+2023-04-11 22:39:40,539 INFO Dasgupta's cost:	19241515518.3987
+2023-04-11 22:40:18,279 INFO 	 Epoch 33 | average train loss: 1.015555
+2023-04-11 22:40:20,751 INFO Dasgupta's cost:	19237701637.8543
+2023-04-11 22:40:59,269 INFO 	 Epoch 34 | average train loss: 1.015544
+2023-04-11 22:41:01,652 INFO Dasgupta's cost:	19236566165.6169
+2023-04-11 22:41:40,536 INFO 	 Epoch 35 | average train loss: 1.015531
+2023-04-11 22:41:43,571 INFO Dasgupta's cost:	19236669651.8201
+2023-04-11 22:42:22,718 INFO 	 Epoch 36 | average train loss: 1.015525
+2023-04-11 22:42:25,384 INFO Dasgupta's cost:	19238352686.0284
+2023-04-11 22:43:04,460 INFO 	 Epoch 37 | average train loss: 1.015519
+2023-04-11 22:43:07,146 INFO Dasgupta's cost:	19236652256.0382
+2023-04-11 22:43:45,861 INFO 	 Epoch 38 | average train loss: 1.015509
+2023-04-11 22:43:48,343 INFO Dasgupta's cost:	19228944852.2550
+2023-04-11 22:44:27,561 INFO 	 Epoch 39 | average train loss: 1.015502
+2023-04-11 22:44:30,412 INFO Dasgupta's cost:	19234894304.1834
+2023-04-11 22:44:30,412 INFO Annealing temperature to: 0.003125
+2023-04-11 22:44:30,413 INFO Annealing learning rate to: 6.25e-06
+2023-04-11 22:45:09,201 INFO 	 Epoch 40 | average train loss: 1.015395
+2023-04-11 22:45:11,592 INFO Dasgupta's cost:	19234984774.8770
+2023-04-11 22:45:50,405 INFO 	 Epoch 41 | average train loss: 1.015368
+2023-04-11 22:45:52,801 INFO Dasgupta's cost:	19233018684.2259
+2023-04-11 22:46:31,834 INFO 	 Epoch 42 | average train loss: 1.015360
+2023-04-11 22:46:34,726 INFO Dasgupta's cost:	19238055400.4808
+2023-04-11 22:47:13,332 INFO 	 Epoch 43 | average train loss: 1.015357
+2023-04-11 22:47:15,750 INFO Dasgupta's cost:	19234030145.0885
+2023-04-11 22:47:54,289 INFO 	 Epoch 44 | average train loss: 1.015352
+2023-04-11 22:47:56,781 INFO Dasgupta's cost:	19234827735.3023
+2023-04-11 22:48:34,816 INFO 	 Epoch 45 | average train loss: 1.015349
+2023-04-11 22:48:37,193 INFO Dasgupta's cost:	19234765547.9821
+2023-04-11 22:49:15,034 INFO 	 Epoch 46 | average train loss: 1.015346
+2023-04-11 22:49:17,456 INFO Dasgupta's cost:	19234491131.5534
+2023-04-11 22:49:55,455 INFO 	 Epoch 47 | average train loss: 1.015342
+2023-04-11 22:49:58,053 INFO Dasgupta's cost:	19235770992.7457
+2023-04-11 22:50:36,564 INFO 	 Epoch 48 | average train loss: 1.015341
+2023-04-11 22:50:39,223 INFO Dasgupta's cost:	19231495898.8686
+2023-04-11 22:51:17,433 INFO 	 Epoch 49 | average train loss: 1.015339
+2023-04-11 22:51:19,949 INFO Dasgupta's cost:	19234576016.6005
+2023-04-11 22:51:19,949 INFO Annealing temperature to: 0.0015625
+2023-04-11 22:51:19,949 INFO Annealing learning rate to: 3.125e-06
+2023-04-11 22:51:19,949 INFO Optimization finished.
+2023-04-11 22:51:19,949 INFO Saving best model at ./embedding/data/model_0.pkl
+2023-04-11 22:51:19,952 INFO Decoding embeddings.
+2023-04-11 22:51:22,299 INFO Dasgupta's cost:	19223317300.9124

@@ -12,6 +12,7 @@ from tqdm import tqdm
 
 import optim
 from config import config_args
+from traditional import umpga
 from datasets.hc_dataset import HCDataset
 from datasets.loading import load_data
 from model.hyphc import HypHC
@@ -56,10 +57,13 @@ def train(args):
 
     # create dataset
     x, y_true, similarities = load_data(args.dataset)
+    logging.info("Building dataset...")
     dataset = HCDataset(x, y_true, similarities, num_samples=args.num_samples)
+    logging.info("Building dataset loader...")
     dataloader = data.DataLoader(dataset, batch_size=args.batch_size, shuffle=True, num_workers=8, pin_memory=True)
 
     # create model
+    logging.info("Creating model...")
     model = HypHC(dataset.n_nodes, args.rank, args.temperature, args.init_size, args.max_scale)
     model.to("cuda")
 
@@ -136,9 +140,14 @@ def train(args):
     return
 
 
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Hyperbolic Hierarchical Clustering.")
     parser = add_flags_from_config(parser, config_args)
     args = parser.parse_args()
-    train(args)
+    if args.cluster == "hyperbolic":
+        train(args)
+    else:
+        umpga(args)
 

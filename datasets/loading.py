@@ -1,7 +1,7 @@
 """Dataset loading."""
 
 import os
-
+import pickle
 import numpy as np
 
 UCI_DATASETS = [
@@ -9,6 +9,11 @@ UCI_DATASETS = [
     "zoo",
     "iris",
 ]
+
+def get_simi_file(data_path):
+    file_fr, file_ext = os.path.splitext(data_path)
+    simi_file = file_fr + "simi.npy"
+    return simi_file
 
 
 def load_data(dataset, normalize=True):
@@ -22,18 +27,34 @@ def load_data(dataset, normalize=True):
     @rtype: Tuple[np.array, np.array, np.array]
     """
     if dataset in UCI_DATASETS:
-        x, y = load_uci_data(dataset)
+        x, y, simi_file = load_uci_data(dataset)
     else:
-        raise NotImplementedError("Unknown dataset {}.".format(dataset))
+        x, y, simi_file = load_data_path(dataset)
+        # raise NotImplementedError("Unknown dataset {}.".format(dataset))
+        
     if normalize:
         x = x / np.linalg.norm(x, axis=1, keepdims=True)
-    x0 = x[None, :, :]
-    x1 = x[:, None, :]
-    cos = (x0 * x1).sum(-1)
-    similarities = 0.5 * (1 + cos)
-    similarities = np.triu(similarities) + np.triu(similarities).T
-    similarities[np.diag_indices_from(similarities)] = 1.0
-    similarities[similarities > 1.0] = 1.0
+    
+    print("Simi_file:", simi_file)
+    if os.path.exists(simi_file):
+        similarities = np.load(simi_file, allow_pickle=True)
+        print("Finish loading!")
+    else:
+        x0 = x[None, :, :]
+        x1 = x[:, None, :]
+        
+        print("Calculating cos...")
+        cos = np.sum(x0 * x1, axis=-1)
+        print("Finish cos!")
+        
+        similarities = 0.5 * (1 + cos)
+        similarities = np.triu(similarities) + np.triu(similarities).T
+        similarities[np.diag_indices_from(similarities)] = 1.0
+        similarities[similarities > 1.0] = 1.0
+        similarities = similarities.astype(np.double)
+        
+        np.save(simi_file, similarities)
+    
     return x, y, similarities
 
 
@@ -71,11 +92,19 @@ def load_uci_data(dataset):
     mean = x.mean(0)
     std = x.std(0)
     x = (x - mean) / std
-    return x, y
-
-
-def load_similarity(data_path):
-    data_dict = np.load(data_path)
-    similarities, label = data_dict["score"], data_dict["label"]
-    return label, similarities 
     
+    return x, y, get_simi_file(data_path)
+
+
+def load_data_path(data_path):
+    # data_dict = np.load(data_path, allow_pickle=True)
+    print("Loading", data_path, "...")
+    data_dict = pickle.load(open(data_path, "rb"))
+    print(data_dict, type(data_dict))
+    z, label = data_dict["representations"], data_dict["label"]
+    print(z.shape, label.shape)
+    
+    weight = np.array([100 ** i for i in range(label.shape[1])])[None, :]
+    new_label = np.sum(label * weight, axis=1)
+    
+    return z, new_label, get_simi_file(data_path)
